@@ -1,6 +1,11 @@
+.components-base-control {
+	font-family: $default-font;
+	font-size: $default-font-size;
+}
+
 .components-base-control__label {
 	display: block;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 }
 
 .components-base-control__help {

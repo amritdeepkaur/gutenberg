@@ -240,21 +240,25 @@ export default class TableEdit extends Component {
 		if ( isEmpty ) {
 			return (
 				<form onSubmit={ this.onCreateTable }>
-					<TextControl
-						type="number"
-						label={ __( 'Column Count' ) }
-						value={ initialColumnCount }
-						onChange={ this.onChangeInitialColumnCount }
-						min="1"
-					/>
-					<TextControl
-						type="number"
-						label={ __( 'Row Count' ) }
-						value={ initialRowCount }
-						onChange={ this.onChangeInitialRowCount }
-						min="1"
-					/>
-					<Button isPrimary type="submit">{ __( 'Create' ) }</Button>
+					<p>
+						<TextControl
+							type="number"
+							label={ __( 'Column Count' ) }
+							value={ initialColumnCount }
+							onChange={ this.onChangeInitialColumnCount }
+							min="1"
+						/>
+					</p>
+					<p>
+						<TextControl
+							type="number"
+							label={ __( 'Row Count' ) }
+							value={ initialRowCount }
+							onChange={ this.onChangeInitialRowCount }
+							min="1"
+						/>
+					</p>
+					<p><Button isPrimary type="submit">{ __( 'Create' ) }</Button></p>
 				</form>
 			);
 		}
